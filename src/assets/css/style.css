@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    padding:4px;
+    margin: 0;
+    min-height: 100px;
+    max-height: 300px;
+    width: 300px;
+    background: #454545;
+}
+
+header {
+    border-radius: 4px;
+    height: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 15px;
+    background: #1a1d20;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+.brand {
+    font-weight: bolder;
+}
+.content {
+    border-radius: 4px;
+    padding: 10px;
+    background: #1a1d20;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+nav section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+button {
+    height: 20px;
+    font-size: 10px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.actions {
+    justify-content: flex-end;
+}
+.snippet {
+    min-height:  50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #111215;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 8px;
+}
+.snippet-title {
+    font-weight: bolder;
+    font-size: 12px;
+}
+pre {
+    font-size: 10px;
+    width: 100%;
+    text-align: left;
+    white-space: pre-line;
+    margin: 8px 0;
+    background: #424141;
+    padding: 4px;
+    border-radius: 4px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.form-wrapper {
+    background: #0b0d0e;
+    padding: 8px;
+    border-radius: 4px;
+}
+.form-wrapper *  {
+    background: #1a1d20;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0;
+}
+.form-wrapper > input {
+    height: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.form-wrapper > textarea {
+    resize: none;
+}
+.form-wrapper > input:active,
+.form-wrapper > textarea:focus,
+.form-wrapper > input:focus {
+    background: #1a1d20;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: none;
+}
+.form-wrapper > input::placeholder,
+.form-wrapper > textarea::placeholder {
+    color: #454545;
+}
+
+.form-wrapper > #actions {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    justify-content: flex-end;
+}
+.form-wrapper #actions > button {
+    background: #000000;
+    padding: 2px 4px;
+}
+.form-wrapper #actions > button#cancel-snippet {
+    background: #db3545;
+}
+.snippet-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#no-snippets {
+    background: #0b0d0e;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: bolder;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Snippets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="brand header-side">
+        <i class="fa fa-solid fa-file-code"></i>
+        Code Snippets Archive
+    </div>
+    <div class="header-side">
+
+    </div>
+</header>
+<div class="content">
+    <nav class="actions">
+        <section class="title">
+            Meus Snippets
+        </section>
+        <section class="actions">
+            <button type="button" class="btn btn-danger btn-sm" id="add-snippet">
+                Novo Snippet
+            </button>
+        </section>
+    </nav>
+    <div class="form-wrapper" style="display: none" id="form">
+        <input name="snippetName" class="form-control" placeholder="NOME">
+        <textarea name="snippetCode" class="form-control" placeholder="//SEU CÓDIGO"></textarea>
+        <div id="actions">
+            <button type="button" id="cancel-snippet">CANCELAR</button>
+            <button type="button" id="save-snippet">SALVAR</button>
+        </div>
+    </div>
+    <div id="no-snippets" style="display: none">
+        Nenhum snippet criado
+    </div>
+</div>
+<div class="snippet" style="display: none" id="snippet-template">
+    <div class="snippet-header">
+        <section class="snippet-title"></section>
+        <div>
+            <i class="fa fa-times remove-snippet"></i>
+        </div>
+    </div>
+    <pre></pre>
+</div>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
